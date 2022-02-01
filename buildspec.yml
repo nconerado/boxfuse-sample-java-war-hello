@@ -13,9 +13,9 @@ phases:
     commands:
     - echo Build completed on `date`
     - mvn package
-#    - mv target/javaconfig-0.0.1-SNAPSHOT.jar javaconfig-0.0.1-SNAPSHOT.jar
-    - boxfuse run target/hello-1.0.war
+    - mv target/hello-1.0.war hello-1.0.war
+#    - boxfuse run target/hello-1.0.war
 artifacts:
   files:
-  - javaconfig-0.0.1-SNAPSHOT.jar
+  - hello-1.0.war
   - .ebextensions/**/*
